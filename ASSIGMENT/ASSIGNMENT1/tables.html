@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+</head>
+<body>
+    <table border = "1" cellspacing = "2" Width = "30%" bgcolor = "#7bd198"  bordercolor = "red" align="center">
+        <!-- <tr>Table Row</tr>
+        <th>Table Header</th>
+        <td>Table Data</td>
+        <Caption>Caption</Caption> -->
+
+        <tr>
+            <th>Serial No.</th>
+            <th>Admission NO.</th>
+            <th>Roll no.</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td> <!--Row 1, col 1-->
+            <td>2023B01310137</td> <!--Row 1, col 2-->
+            <td>56</td> <!--Row 1, col 3-->
+            <td>Anurag</td> <!--Row 1, col 3-->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2023B0131037</td>
+            <td>56</td>
+            <td>anurag</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2023B0131037</td>
+            <td>56</td>
+            <td>anurag</td>
+        </tr>
+        <caption align="TOP">INFORMATION</caption>
+    </table>
+    <!-- Table attributes: BGcolor, Width, Border, Cellspacing, cellpadding, align, background, bordercolor, bordercolor dark -->
+    <!-- Table data attributes: colspan: if a column wants two or more columns
+    rowspan: same as colspan 
+    align: align data inside the columns either, left, right or center
+    valign: cell data can have top, middle, or bottom
+    width: width of a specific column
+    height: height of a specific column-->
+    <!-- <table border = "1" width = "50%" align="center">
+        <caption><h1>Spare Parts</h1></caption>
+        <tr>
+            <th>Stock Number</th>
+            <th>description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td bgcolor="red">3476-AB</td>
+            <td>76mm Socket</td>
+            <td>45.00</td>
+        </tr>
+        <tr>
+            <td>3478-AB</td>
+            <td font color = "blue">78mm Socket</td>
+            <td>45.00</td>
+        </tr>
+        <tr>
+            <td>3480-AB</td>
+            <td>80mm Socket</td>
+            <td>50.00</td>
+        </tr>
+    </table> -->
+    <table border = "1" width = "50%" align="center">
+        <caption><h1>Spare Parts</h1></caption>
+        <tr>
+            <th>Stock Number</th>
+            <th>description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td bgcolor="red"  colspan="2">3476-AB</td>
+            <td rowspan="2">76mm Socket</td>
+            <td>45.00</td>
+        </tr>
+        <tr>
+            <td>3478-AB</td>
+            <td font color = "blue">78mm Socket</td>
+            <td>47.50</td>
+        </tr>
+        <tr>
+            <td>3480-AB</td>
+            <td>80mm Socket</td>
+            <td>50.00</td>
+        </tr>
+    </table>
+<br>
+    <table border = '2' align="center" width = "750" bordercolor = "red" >
+        
+        <tr>
+            <td colspan="4" align="center"><font size = "+2" color = "red"><b>Page Banner</b></font></td>
+        </tr>
+        <tr>
+            <td rowspan = "2" width = "25%">Nav Links</td>
+            <td colspan="2">Feature Article</td>
+            <td rowspan="2" width = "25%">Linker Ads</td>
+        </tr>
+        <tr>
+            <td width = "25%">News column1</td>
+            <td width = "25%">News column2</td>
+        </tr>
+    </table>
+</body>
+</html>
