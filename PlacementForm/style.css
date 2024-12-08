@@ -1,0 +1,100 @@
+.first{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: -4px;
+    
+}
+.second{
+    display: flex;
+    gap: 470px;
+    
+    
+}
+.second .second2{
+    display: flex;
+    gap: 30px;
+}
+.second .second1{
+    display: flex;
+    gap:78px;
+}
+.fourth{
+    padding: 10px;
+    display: flex;
+    gap: 100px;
+}
+.image{
+    background-color: black;
+}
+.abc{
+    text-align: center;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    background-color: brown;
+    color: white;
+}
+.hr{
+    border-top:5px solid;
+    
+    
+}
+.start{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-decoration: underline;
+    background-color: powderblue;
+    
+}
+.zero{
+    display: flex;
+    gap:100px;
+}
+.fifth{
+    display:flex;
+    gap: 100px;
+}
+.sixth{
+    display: flex;
+    gap:76px;
+
+}
+.seventh{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+
+}
+.btn{
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    height: 50px;
+    width:90px;
+}
+
+.category{
+    width: 200px;
+    height:40px;
+    scroll-behavior: none;
+}
+.negative{
+    display: flex;
+    gap:500px;
+
+}
+.session{
+    font-size: 50px;
+    text-align: right;
+    text-decoration: underline;
+}
+.btn:hover{
+    background-color: green;
+}
+.xyz{
+    color: red;
+    font-size: 15px;
+}
+
