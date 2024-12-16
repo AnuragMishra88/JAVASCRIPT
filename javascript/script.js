@@ -61,6 +61,196 @@ getinfo:function(){
 }
 };
 document.getElementById("demo").innerHTML = person.getinfo();
+var per={
+    name:"garuna",
+    age:20,
+    address:{
+        street:"nehru nagar",
+        flatno:201
+    }
+}
+console.log(per)
+//! class is a virtual entity object is physical enitity
+var person2=new Object();
+person2.name="ANURAG";
+person2["age"]=20;
+person2.address={};
+person2.address.street="nagar road";
+console.log(person2)
+
+console.log(per["name"]);
+document.write(per["name"]);
+document.write("<br>");
+console.log(per.age);
+document.write(per.age);
+// inside the function if variable is declared without "var" 
+
+
+function car(){
+    var carname="volvo";
+    document.getElementById("demo1").innerHTML=typeof carname + " " +carname;
+}
+car();
+// document.getElementById("demo1").innerHTML=typeof carname + " " +carname; will be error due to scope of variable
+
+
+document.write("<br>");
+function show()
+{
+    var a="200";
+    document.write(a+"<br>");
+    function disk(){
+        var b="500";
+        document.write(a+" "+b);
+    }
+    disk();
+}
+show();
+
+
+var my="global";
+function check(){
+    var my="local";
+    document.write(my);
+    window.document.write(my);
+
+}
+check();
+var a=10;
+function funA(){
+    console.log("Start function A");
+    function funb(){
+        console.log("in function b");
+    }
+    funb();
+}
+funA();
+console.log("GlobalContext");
+
+var name="John";
+function first(){
+    // var name="John";
+
+    var a="Hello!";
+    second();
+    var z=a+name;
+    console.log(z);
+}
+function second(){
+    var a="Hi!";
+    third();
+    var z=a+name;
+    console.log(z);
+}
+function third(){
+    var a="Hey!";
+    var z=a+name;
+    console.log(z);
+}
+console.log(name);
+first();
+
+
+
+var x=5;
+function add(){
+    var y=45;
+    console.log(x+y);
+    function mul(){
+        var z=10;
+        console.log(y*z);
+    }
+    mul();
+}
+add();
+
+
+var age=18.3;
+if(age>18){
+    document.write("<br>You are eligible to cast vote<br>");
+}
+else{
+    document.write("<br>Not eligible to cast vote<br>");
+}
+document.write("###########################################<br>");
+
+
+var grade='G';
+document.write("Entering switch block<br />");
+switch(grade){
+    case 'A':
+    document.write("Good Job<br />");
+    break;
+    case 'B':
+    document.write("Pretty Good<br />");
+    break;
+    case 'C':
+    document.write("Passed<br />");
+    break;
+    case 'D':
+    document.write("Not so good<br />");
+    break;
+    case 'F':
+    document.write("Failed<br />");
+    break;
+    default:
+        document.write("Invalid Grade<br />");
+}
+document.write("exit");
+
+var i;
+for(i=0;i<3;i++){
+    console.log(i);
+}
+var count;
+document.write("<br />Starting Loop" + "<br />");
+for(count=0;count<10;count++){
+    document.write("Current Count:" +count);
+    document.write("<br />");
+}
+document.write("Loop Stopped");
+// document.write(my);
+
+
+for(var i=0;i<100;i++){
+    if(i%2==0){
+        document.write(" "+i+"is even number"+ " ");
+    }
+    else{
+        document.write(" "+ i+"is odd number"+ " ");
+    }
+}
+
+var arr=["A","B","C"]
+for(var i=0;i<arr.length;i++){
+    console.log("The member of array in index "+i+" is "+arr[i]);
+}
+
+var cnt=0;
+console.log("Starting Loop ");
+while(cnt<10){
+    console.log("Current Count: "+ cnt);
+    cnt++;
+}
+
+console.log("LOOP STOPPED");
+
+
+function oclick(){
+    alert("Hello World");
+}
+function sayHello(name,age){
+    console.log(name + " is " + age +" years old");
+
+}
+function addition(a,b){
+    console.log(a+b);
+    document.write(a+b);
+
+}
+addition(10,20);
+
+
 
 
 
