@@ -250,6 +250,56 @@ function addition(a,b){
 }
 addition(10,20);
 
+document.write("###############################################");
+
+var res=mul(12,30);
+function mul(x,y){
+    return x*y;
+}
+document.write(res);
+
+console.log("############################");
+
+// ARROW FUNCTIONS
+
+//! METHOD 1 
+var add2=(a,b)=>{
+    console.log(a+b);
+};
+add2(20,30);
+
+//! METHOD 2
+var add3=(x,y)=>console.log(x+y);
+add3(100,400);
+
+//* by default +(addition) is concatenation of string
+//* 10+10=20   10+"10"="1010"
+
+function my2(){
+    var x=5+5;
+    var y="5"+5;
+    var z="HEllo"+5;
+    var demoP=document.getElementById("demo10");
+    demoP.innerHTML=x+"<br>"+y+"<br>"+z;
+}
+
+//* {=} assignment  {==} comparison {===} compare type
+var arrays=[
+1,
+"meera maam",
+true,
+{
+    name:"anurag",
+    age:20
+},
+function(name){
+    console.log(name);
+},
+"Abhishek Bacchan","amitabh","bacchan"
+
+]
+console.log(arrays);
+
 
 
 
